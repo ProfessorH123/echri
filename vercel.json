@@ -1,0 +1,10 @@
+{
+  "builds": [
+    {
+      "src": "dist/*",
+      "use": "@vercel/angular"
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }],
+  "maxLambdaSize": "10mb"
+}
